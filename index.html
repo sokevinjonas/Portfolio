@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JonasDev</title>
+    <link rel="stylesheet preload" href="style.css">
+    <script src="https://kit.fontawesome.com/df62ed7ae5.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Accueil</a></li>
+                    <li><a href="#apropros" onclick="closemenu()">A Propos</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Developpeur Web Fullstatck</p>
+                <h1>Salut, je suis <span>Jonas Dev</span> <br>
+                    Le Dev le plus transparent du web
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------A propos de moi?----------------------- -->
+    <div id="apropros">
+        <div class="container">
+            <div class="row">
+                <div class="apropros-col-1">
+                    <img src="images/user.svg" alt="profile">
+                </div>
+                <div class="apropros-col-2">
+                    <h1 class="text-titre">Qui suis-je?</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto similique, iure
+                        voluptatibus nihil rem earum molestias itaque odit asperiores eligendi aut voluptates quae,Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto similique, iure
+                        voluptatibus nihil rem earum molestias itaque odit asperiores eligendi aut voluptates quae.ipsum
+                        dolor sit amet consectetur adipisicing elit. Perspiciatis iusto similique, iure
+                        voluptatibus nihil rem earum molestias itaque odit asperiores eligendi aut voluptates quae
+                    </p>
+                    <div class="tab-titre">
+                        <p class="tab-links active-link" onclick="opentab('competence')">Compétences</p>
+                        <p class="tab-links" onclick="opentab('experience')">Expérience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contenue active-tab" id="competence">
+                        <ul>
+                            <li><span>Ui</span><br> Designe web interface</li>
+                            <li><span>Developpeur Web</span> <br> Developpeur Frontend & Fullstatck</li>
+                            <li><span>Developpeur mobile</span> <br> Developpeur applications mobile</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contenue" id="experience">
+                        <ul>
+                            <li><span>2022 - 2023</span> <br>Projet d'equipe de la plateforme e-concours bf</li>
+                            <li><span>2023 - 2022</span> <br>Premier projet freelence</li>
+                            <li><span>2022 - 2021</span> <br> Satge de 3 mois a Atis</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contenue" id="education">
+                        <ul>
+                            <li><span>2023-2024</span> <br> L2 Genie informatique Aube Nouvelle</li>
+                            <li><span>2022-2023</span> <br> L1 Genie informatique Aube Nouvelle</li>
+                            <li><span>2021-2022</span> <br> Diplome du BACCALAUREAT</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------Mes services----------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="text-titre">Mes services</h1>
+            <div class="services-liste">
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Designe web </h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque tenetur est consectetur
+                        molestiae.</p>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Dev Frontend & Fullstatck</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque tenetur est consectetur
+                        molestiae.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Dev applications mobile</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque tenetur est consectetur
+                        molestiae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------Mes projets-----------------  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="text-titre">Mes projets</h1>
+            <div class="projet-list">
+                <div class="projet">
+                    <img src="images/work-1.png" alt="images-projet-1">
+                    <div class="layer">
+                        <h3>Plateforme de gestion employer-salaire</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis harum tempore aspernatur qui
+                            cupiditate totam error.</p>
+                        <a href="">Demo</a>
+                    </div>
+                </div>
+                <div class="projet">
+                    <img src="images/work-2.png" alt="images-projet-2">
+                    <div class="layer">
+                        <h3>Plateforme de transfert argent</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis harum tempore aspernatur qui
+                            cupiditate totam error.</p>
+                        <a href="">Demo</a>
+                    </div>
+                </div>
+                <div class="projet">
+                    <img src="images/work-3.png" alt="images-projet-3">
+                    <div class="layer">
+                        <h3>Plateforme de vote en ligne</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis harum tempore aspernatur qui
+                            cupiditate totam error.</p>
+                        <a href="">Demo</a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">Voir plus</a>
+        </div>
+    </div>
+
+    <!-- -------------------Contacter------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="text-titre">Contactez moi </h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>kjonasdevpro@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>(+226) 56-78-55-80</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" class="btn btn2">Télécharger CV </a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="nom" placeholder="Entrer votre nom ici">
+                        <input type="email" name="email" id="" placeholder="Entrer votre mail ici">
+                        <textarea name="message" rows="6" placeholder="Entrer votre message ici ! "></textarea>
+                        <button type="submit" class="btn btn2">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Jonas Dev, Le Developpeur le plus transparent du web.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
