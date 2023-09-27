@@ -88,7 +88,9 @@ nav ul li a:hover::after{
 }
 .apropros-col-2 p{
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
+    font-style: initial;
+    line-height: 25px;
 }
 .text-titre {
     color: #fff;
